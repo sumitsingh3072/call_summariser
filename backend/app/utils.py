@@ -1,31 +1,31 @@
 import csv
-import os
-from .models import AnalysisResponse
+from pathlib import Path
+from typing import Union, Any, Optional
 
-def save_to_csv(analysis_result: AnalysisResponse, filename="call_analysis.csv"):
-    """
-    Saves the analysis result to a CSV file.
 
-    Args:
-        analysis_result (AnalysisResponse): The Pydantic model containing the data.
-        filename (str): The name of the CSV file to save to.
-    """
-    # Check if the file exists to determine if we need to write the header
-    file_exists = os.path.isfile(filename)
+def save_to_csv(analysis_result: Any, filename: Optional[Union[str, Path]] = None):
+    """Save the analysis result to a CSV file."""
 
-    # Open the file in append mode, which creates the file if it doesn't exist
-    with open(filename, mode='a', newline='', encoding='utf-8') as csvfile:
-        # Define the column headers
-        fieldnames = ['transcript', 'summary', 'sentiment']
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    repo_backend = Path(__file__).resolve().parent.parent
+    csv_path = Path(filename) if filename else repo_backend / "call_analysis.csv"
 
-        # If the file is new, write the header row first
+    if hasattr(analysis_result, "dict"):
+        row = analysis_result.dict()
+    elif isinstance(analysis_result, dict):
+        row = analysis_result
+    else:
+        row = {
+            "transcript": getattr(analysis_result, "transcript", ""),
+            "summary": getattr(analysis_result, "summary", ""),
+            "sentiment": getattr(analysis_result, "sentiment", ""),
+        }
+
+    fieldnames = ["transcript", "summary", "sentiment"]
+    file_exists = csv_path.is_file()
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(csv_path, mode="a", newline="", encoding="utf-8") as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         if not file_exists:
             writer.writeheader()
-        
-        # Write the analysis data as a new row
-        writer.writerow({
-            'transcript': analysis_result.transcript,
-            'summary': analysis_result.summary,
-            'sentiment': analysis_result.sentiment
-        })
+        writer.writerow({k: row.get(k, "") for k in fieldnames})

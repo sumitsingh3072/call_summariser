@@ -1,4 +1,4 @@
-transcript,summary,sentiment
+"transcript","summary","sentiment"
 "Agent: Thank you for calling Tech Support, my name is Alex. How can I help you today?
 
 Customer: Hi Alex, I'm having trouble with my new wireless mouse. I bought it yesterday, and I can't get it to connect to my laptop. The light on the mouse is blinking, but my computer doesn't see it.
@@ -19,67 +19,4 @@ Agent: You're very welcome! I'm glad we could resolve the issue for you. Is ther
 
 Customer: Nope, that was it. You've been a great help.
 
-Agent: Thank you! Have a wonderful day.","The customer contacted Tech Support regarding a wireless mouse that would not connect to their laptop. The agent identified the model, guided the customer through downloading and installing the required driver, and the mouse functioned correctly. The customer expressed gratitude, confirming the issue was resolved.",Positive
-"Agent: Thank you for calling Tech Support, my name is Alex. How can I help you today?
-
-Customer: Hi Alex, I'm having trouble with my new wireless mouse. I bought it yesterday, and I can't get it to connect to my laptop. The light on the mouse is blinking, but my computer doesn't see it.
-
-Agent: I understand your frustration. Let's see if we can get that sorted out for you. Could you please tell me the model number of the mouse? It should be on the bottom.
-
-Customer: Sure, it's the ""Wireless Pro X1"". I've tried turning Bluetooth on and off on my laptop, but it didn't help.
-
-Agent: Okay, thank you. The Wireless Pro X1 sometimes needs a specific driver. Let's try downloading it. Could you open your web browser and go to our website?
-
-Customer: Okay, I'm on the site.
-
-Agent: Great. Now, go to the ""Support"" section and then to ""Downloads."" You should see a driver for the Wireless Pro X1. Please download and install that.
-
-Customer: Alright, it's downloading now... Okay, it's installed. Whoa, it's working now! My cursor is moving. Thank you so much, Alex!
-
-Agent: You're very welcome! I'm glad we could resolve the issue for you. Is there anything else I can assist you with today?
-
-Customer: Nope, that was it. You've been a great help.
-
-Agent: Thank you! Have a wonderful day.","Customer reported a connectivity issue with a newly purchased wireless mouse. The agent guided them to download and install the correct driver, which resolved the problem. The customer expressed gratitude and concluded the call positively.",Positive
-"Agent: Thank you for calling Tech Support, my name is Alex. How can I help you today?
-
-Customer: Hi Alex, I'm having trouble with my new wireless mouse. I bought it yesterday, and I can't get it to connect to my laptop. The light on the mouse is blinking, but my computer doesn't see it.
-
-Agent: I understand your frustration. Let's see if we can get that sorted out for you. Could you please tell me the model number of the mouse? It should be on the bottom.
-
-Customer: Sure, it's the ""Wireless Pro X1"". I've tried turning Bluetooth on and off on my laptop, but it didn't help.
-
-Agent: Okay, thank you. The Wireless Pro X1 sometimes needs a specific driver. Let's try downloading it. Could you open your web browser and go to our website?
-
-Customer: Okay, I'm on the site.
-
-Agent: Great. Now, go to the ""Support"" section and then to ""Downloads."" You should see a driver for the Wireless Pro X1. Please download and install that.
-
-Customer: Alright, it's downloading now... Okay, it's installed. Whoa, it's working now! My cursor is moving. Thank you so much, Alex!
-
-Agent: You're very welcome! I'm glad we could resolve the issue for you. Is there anything else I can assist you with today?
-
-Customer: Nope, that was it. You've been a great help.
-
-Agent: Thank you! Have a wonderful day.","The customer called about a new wireless mouse that wouldn't connect to their laptop. The agent directed them to download and install a specific driver from the support site, after which the mouse connected successfully. The customer expressed gratitude and ended the call positively.",Positive
-"Agent: Thank you for calling Tech Support, my name is Alex. How can I help you today?
-
-Customer: Hi Alex, I'm having trouble with my new wireless mouse. I bought it yesterday, and I can't get it to connect to my laptop. The light on the mouse is blinking, but my computer doesn't see it.
-
-Agent: I understand your frustration. Let's see if we can get that sorted out for you. Could you please tell me the model number of the mouse? It should be on the bottom.
-
-Customer: Sure, it's the ""Wireless Pro X1"". I've tried turning Bluetooth on and off on my laptop, but it didn't help.
-
-Agent: Okay, thank you. The Wireless Pro X1 sometimes needs a specific driver. Let's try downloading it. Could you open your web browser and go to our website?
-
-Customer: Okay, I'm on the site.
-
-Agent: Great. Now, go to the ""Support"" section and then to ""Downloads."" You should see a driver for the Wireless Pro X1. Please download and install that.
-
-Customer: Alright, it's downloading now... Okay, it's installed. Whoa, it's working now! My cursor is moving. Thank you so much, Alex!
-
-Agent: You're very welcome! I'm glad we could resolve the issue for you. Is there anything else I can assist you with today?
-
-Customer: Nope, that was it. You've been a great help.
-
-Agent: Thank you! Have a wonderful day.","The customer reported a connectivity issue with a newly purchased wireless mouse. The agent guided the customer through downloading and installing the correct driver, successfully resolving the problem. The customer expressed gratitude and ended the call positively.",Positive
+Agent: Thank you! Have a wonderful day.","Customer had trouble connecting a new wireless mouse; agent guided them to download and install the correct driver, resolving the issue and leaving the customer satisfied.","Positive"
