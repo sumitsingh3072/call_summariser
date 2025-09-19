@@ -1,0 +1,61 @@
+:root{
+	--bg: #020403; /* near-black */
+	--card: #07110a; /* dark card */
+	--accent: #22c55e; /* vivid green */
+	--accent-600: #16a34a;
+	--muted: #9ca3af;
+	--text: #d1fae5; /* light greenish text */
+	--soft: rgba(255,255,255,0.04);
+}
+
+body{
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	background: linear-gradient(180deg,#000814 0%,var(--bg) 100%);
+	margin:0;
+	color:var(--text);
+	padding:28px;
+}
+
+.container{
+	max-width:860px;
+	margin:28px auto;
+	background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+	border:1px solid rgba(34,197,94,0.06);
+	padding:24px;
+	border-radius:12px;
+	box-shadow:0 8px 30px rgba(2,6,9,0.6);
+}
+
+h1{margin-top:0;color:var(--accent)}
+.subtle{color:var(--muted);font-size:0.95rem}
+
+.upload-form{display:flex;gap:12px;align-items:center;margin:16px 0 8px}
+input[type=file]{background:transparent;border:1px dashed rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:var(--text)}
+
+.magic-btn{
+	background:linear-gradient(180deg, var(--accent), var(--accent-600));
+	color:#001a0b;
+	border:0;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:600;
+	box-shadow:0 6px 18px rgba(34,197,94,0.12);
+}
+.magic-btn[disabled]{opacity:0.55;cursor:default}
+
+.error{color:#ffb4b4;background:rgba(255,20,20,0.06);padding:10px;border-radius:8px}
+
+.result{margin-top:18px;padding:16px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.015));border:1px solid rgba(255,255,255,0.02)}
+.field{margin-bottom:12px}
+.field strong{color:var(--accent)}
+
+.transcript pre{white-space:pre-wrap;background:transparent;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+.note{margin-top:14px;color:var(--muted)}
+
+/* Small header area */
+.header{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#0ea5a3);display:flex;align-items:center;justify-content:center;font-weight:700;color:#001a0b}
+
+/* Responsive tweaks */
+@media (max-width:600px){
+	.upload-form{flex-direction:column;align-items:stretch}
+	.container{padding:16px}
+}
+
